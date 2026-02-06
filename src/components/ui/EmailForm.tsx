@@ -22,27 +22,12 @@ export function EmailForm({
     if (!email || !email.includes("@")) return;
 
     setStatus("loading");
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
 
-      const data = await res.json();
-
-      if (res.ok) {
-        setStatus("success");
-        setMessage("Check your email for the guide!");
-        setEmail("");
-      } else {
-        setStatus("error");
-        setMessage(data.error || "Something went wrong. Please try again.");
-      }
-    } catch {
-      setStatus("error");
-      setMessage("Something went wrong. Please try again.");
-    }
+    // TODO: Wire up to /api/subscribe once Resend is configured
+    await new Promise((resolve) => setTimeout(resolve, 600));
+    setStatus("success");
+    setMessage("Thanks! We'll send the guide when it's ready.");
+    setEmail("");
   }
 
   if (status === "success") {
