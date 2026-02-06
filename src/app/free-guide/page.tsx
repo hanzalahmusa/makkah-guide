@@ -3,9 +3,9 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Get the Free Makkah Guide",
+  title: "The 7-Day Second-Time Umrah Planner (PDF)",
   description:
-    "Download our free PDF pocket guide to Makkah — top picks, packing lists, and insider tips for repeat Umrah visitors.",
+    "Download our free 7-day Umrah planner PDF — top picks, packing lists, and insider tips for repeat Umrah visitors.",
   path: "/free-guide",
 });
 
@@ -18,7 +18,7 @@ export default function FreeGuidePage() {
             Free Download
           </p>
           <h1 className="mt-2 font-heading text-3xl text-ink md:text-5xl">
-            The Makkah Pocket Guide
+            The 7-Day Second-Time Umrah Planner
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-light">
             Everything you need in one beautifully designed PDF. Our top hotel

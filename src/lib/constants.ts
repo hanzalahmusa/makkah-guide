@@ -34,12 +34,10 @@ export const MOBILE_NAV_GROUPS = [
 ] as const;
 
 export const EXPERIENCE_CATEGORIES = [
-  "spiritual",
-  "cultural",
-  "reflective",
-  "practical",
-  "culinary",
-  "nature",
+  "spiritual-depth",
+  "history-heritage",
+  "nature-reflection",
+  "culture-daily-life",
 ] as const;
 
 export const STAY_FEELS = [

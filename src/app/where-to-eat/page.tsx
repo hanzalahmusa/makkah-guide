@@ -8,10 +8,10 @@ import { FilterBar } from "@/components/ui/FilterBar";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 
 const filters = [
-  { value: "near-haram", label: "Near Haram" },
-  { value: "local-favourite", label: "Local Favourite" },
-  { value: "late-night", label: "Late Night" },
-  { value: "family", label: "Family" },
+  { value: "near-haram", label: "Near Haram (Actually Good)" },
+  { value: "local-favourite", label: "Local Favourites" },
+  { value: "late-night", label: "Late-Night Eats" },
+  { value: "family", label: "Clean & Simple Family Food" },
   { value: "quick-bite", label: "Quick Bite" },
   { value: "special-occasion", label: "Special Occasion" },
 ];

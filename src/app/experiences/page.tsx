@@ -8,9 +8,16 @@ import { FilterBar } from "@/components/ui/FilterBar";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { EXPERIENCE_CATEGORIES } from "@/lib/constants";
 
+const CATEGORY_LABELS: Record<string, string> = {
+  "spiritual-depth": "Spiritual Depth",
+  "history-heritage": "History & Heritage",
+  "nature-reflection": "Nature & Reflection",
+  "culture-daily-life": "Culture & Daily Life",
+};
+
 const filters = EXPERIENCE_CATEGORIES.map((c) => ({
   value: c,
-  label: c.charAt(0).toUpperCase() + c.slice(1),
+  label: CATEGORY_LABELS[c] ?? c,
 }));
 
 export default function ExperiencesPage() {

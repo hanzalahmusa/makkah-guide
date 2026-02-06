@@ -34,12 +34,12 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: "Makkah Guide <hello@makkahguide.com>",
       to: email,
-      subject: "Your Free Makkah Pocket Guide",
+      subject: "Your Free 7-Day Umrah Planner",
       html: `
         <div style="font-family: sans-serif; max-width: 560px; margin: 0 auto;">
-          <h1 style="color: #1A1A1A; font-size: 24px;">Your Makkah Pocket Guide</h1>
+          <h1 style="color: #1A1A1A; font-size: 24px;">Your 7-Day Umrah Planner</h1>
           <p style="color: #4A4A4A; line-height: 1.6;">
-            Assalamu alaikum! Thank you for downloading the Makkah Pocket Guide.
+            Assalamu alaikum! Thank you for downloading the 7-Day Second-Time Umrah Planner.
           </p>
           <p style="color: #4A4A4A; line-height: 1.6;">
             We've put together our best recommendations, practical tips, and insider knowledge
