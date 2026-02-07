@@ -18,15 +18,15 @@
 }
 
 :root {
-  --color-sand: #F7F6F3;
-  --color-sand-dark: #EBEAE6;
-  --color-ink: #1E2A38;
-  --color-ink-light: #8A8F98;
-  --color-sage: #E94B3C;
-  --color-sage-dark: #D43A2B;
-  --color-gold: #F2C94C;
-  --color-gold-light: #F7E5A0;
-  --color-clay: #F2C94C;
+  --color-sand: #F8F7F4;
+  --color-sand-dark: #EAE8E3;
+  --color-ink: #1D3A3A;
+  --color-ink-light: #6B8181;
+  --color-sage: #2A9D8F;
+  --color-sage-dark: #21877A;
+  --color-gold: #E9A820;
+  --color-gold-light: #F5D78E;
+  --color-clay: #D4855A;
   --color-white: #FFFFFF;
 }
 
