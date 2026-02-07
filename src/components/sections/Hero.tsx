@@ -83,14 +83,7 @@ export function Hero() {
         {/* Who this is for */}
         <div className="mx-auto mt-16 max-w-md">
           <div className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
-            <div className="mb-5 flex flex-col items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/10">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gold">
-                  <path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-              <h3 className="font-heading text-lg text-ink">This is for you if…</h3>
-            </div>
+            <h3 className="mb-5 text-center font-heading text-lg text-ink">This is for you if…</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
                 <span className="mt-px shrink-0 text-gold">&#10003;</span>
