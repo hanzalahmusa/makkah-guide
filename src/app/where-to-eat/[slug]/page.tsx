@@ -60,44 +60,14 @@ export default async function EatDetailPage({ params }: Props) {
           </div>
 
           {/* At a glance */}
-          <div className="mb-12 rounded-2xl border border-sand-dark bg-white p-8">
-            <h2 className="mb-6 font-heading text-xl text-ink">
-              {eat.title} — At a glance
-            </h2>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm">
-                <span className="mt-0.5 shrink-0 font-semibold text-ink">Price</span>
-                <span className="text-ink-light">{eat.priceRange}</span>
-              </li>
-              {eat.bestForTag && (
-                <li className="flex items-start gap-3 text-sm">
-                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Best for</span>
-                  <span className="text-ink-light">{eat.bestForTag}</span>
-                </li>
-              )}
-              {eat.skipIf && (
-                <li className="flex items-start gap-3 text-sm">
-                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Skip if</span>
-                  <span className="text-ink-light">{eat.skipIf}</span>
-                </li>
-              )}
-              {eat.distanceFromHaram && (
-                <li className="flex items-start gap-3 text-sm">
-                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Distance from Al Haram</span>
-                  <span className="text-ink-light">{eat.distanceFromHaram}</span>
-                </li>
-              )}
-              <li className="flex items-start gap-3 text-sm">
-                <span className="mt-0.5 shrink-0 font-semibold text-ink">Location</span>
-                <span className="text-ink-light">{eat.location}</span>
-              </li>
-              {eat.hours && (
-                <li className="flex items-start gap-3 text-sm">
-                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Hours</span>
-                  <span className="text-ink-light">{eat.hours}</span>
-                </li>
-              )}
-            </ul>
+          <div className="mb-12 border-b border-sand-dark">
+            <h3 className="py-4 font-heading text-xl text-ink">At a glance</h3>
+            <div className="flex flex-wrap gap-2 pb-6">
+              <Tag>{eat.priceRange}</Tag>
+              {eat.bestForTag && <Tag>{eat.bestForTag}</Tag>}
+              {eat.skipIf && <Tag>Skip if {eat.skipIf}</Tag>}
+              {eat.distanceFromHaram && <Tag>{eat.distanceFromHaram}</Tag>}
+            </div>
           </div>
 
           {/* Content — contains "What to order" and "What's our take" as collapsibles */}
