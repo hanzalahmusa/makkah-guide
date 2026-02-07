@@ -5,6 +5,7 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://experiencem
 
 export const NAV_LINKS = [
   { label: "Experiences", href: "/experiences" },
+  { label: "Itineraries", href: "/itineraries" },
   { label: "Where to Stay", href: "/where-to-stay" },
   { label: "Where to Eat", href: "/where-to-eat" },
   { label: "About", href: "/about" },
