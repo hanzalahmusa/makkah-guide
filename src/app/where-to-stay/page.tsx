@@ -15,13 +15,10 @@ const filters = [
 ];
 
 export default function WhereToStayPage() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("very-close");
   const allStays = getAllStays();
 
-  const filtered =
-    activeFilter === "all"
-      ? allStays
-      : allStays.filter((s) => s.feel === activeFilter);
+  const filtered = allStays.filter((s) => s.feel === activeFilter);
 
   return (
     <PageWrapper>

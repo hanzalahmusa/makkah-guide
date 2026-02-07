@@ -15,13 +15,10 @@ const filters = [
 ];
 
 export default function WhereToEatPage() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("near-haram");
   const allEats = getAllEats();
 
-  const filtered =
-    activeFilter === "all"
-      ? allEats
-      : allEats.filter((e) => e.category === activeFilter);
+  const filtered = allEats.filter((e) => e.category === activeFilter);
 
   return (
     <PageWrapper>

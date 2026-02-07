@@ -21,13 +21,10 @@ const filters = EXPERIENCE_CATEGORIES.map((c) => ({
 }));
 
 export default function ExperiencesPage() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("spiritual-reflective");
   const allExperiences = getAllExperiences();
 
-  const filtered =
-    activeFilter === "all"
-      ? allExperiences
-      : allExperiences.filter((e) => e.category === activeFilter);
+  const filtered = allExperiences.filter((e) => e.category === activeFilter);
 
   return (
     <PageWrapper>

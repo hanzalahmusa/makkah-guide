@@ -39,7 +39,6 @@ export function Hero() {
             />
           </div>
         ))}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
         {/* Dots */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
           {heroImages.map((_, i) => (

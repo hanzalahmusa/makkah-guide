@@ -24,6 +24,7 @@ export const MOBILE_NAV_GROUPS = [
     label: "More",
     links: [
       { label: "About", href: "/about" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
 ] as const;
