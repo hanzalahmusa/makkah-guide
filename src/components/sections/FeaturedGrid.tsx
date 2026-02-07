@@ -36,21 +36,22 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {experiences.map((exp, i) => (
-              <Card
-                key={exp.slug}
-                href={`/experiences/${exp.slug}`}
-                title={exp.title}
-                subtitle={exp.subtitle}
-                coverImage={exp.coverImage}
-                badge={exp.category}
-                index={i}
-                meta={
-                  <div className="flex gap-2">
-                    <Tag>{exp.duration}</Tag>
-                    <Tag>{exp.cost === "free" ? "Free" : exp.cost}</Tag>
-                  </div>
-                }
-              />
+              <div key={exp.slug} className={i === 2 ? "hidden md:block" : undefined}>
+                <Card
+                  href={`/experiences/${exp.slug}`}
+                  title={exp.title}
+                  subtitle={exp.subtitle}
+                  coverImage={exp.coverImage}
+                  badge={exp.category}
+                  index={i}
+                  meta={
+                    <div className="flex gap-2">
+                      <Tag>{exp.duration}</Tag>
+                      <Tag>{exp.cost === "free" ? "Free" : exp.cost}</Tag>
+                    </div>
+                  }
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -77,21 +78,22 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {itineraries.map((itin, i) => (
-              <Card
-                key={itin.slug}
-                href={`/itineraries/${itin.slug}`}
-                title={itin.title}
-                subtitle={itin.subtitle}
-                coverImage={itin.coverImage}
-                badge={itin.durationLabel}
-                index={i}
-                meta={
-                  <div className="flex gap-2">
-                    <Tag>{itin.pace}</Tag>
-                    <Tag>{`${itin.stops.length} stops`}</Tag>
-                  </div>
-                }
-              />
+              <div key={itin.slug} className={i === 2 ? "hidden md:block" : undefined}>
+                <Card
+                  href={`/itineraries/${itin.slug}`}
+                  title={itin.title}
+                  subtitle={itin.subtitle}
+                  coverImage={itin.coverImage}
+                  badge={itin.durationLabel}
+                  index={i}
+                  meta={
+                    <div className="flex gap-2">
+                      <Tag>{itin.pace}</Tag>
+                      <Tag>{`${itin.stops.length} stops`}</Tag>
+                    </div>
+                  }
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -118,21 +120,22 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {stays.map((stay, i) => (
-              <Card
-                key={stay.slug}
-                href={`/where-to-stay/${stay.slug}`}
-                title={stay.title}
-                subtitle={stay.subtitle}
-                coverImage={stay.coverImage}
-                badge={stay.feelLabel}
-                index={i}
-                meta={
-                  <div className="flex gap-2">
-                    <Tag>{stay.walkingMinutes} min walk</Tag>
-                    <Tag>{stay.priceRange}</Tag>
-                  </div>
-                }
-              />
+              <div key={stay.slug} className={i === 2 ? "hidden md:block" : undefined}>
+                <Card
+                  href={`/where-to-stay/${stay.slug}`}
+                  title={stay.title}
+                  subtitle={stay.subtitle}
+                  coverImage={stay.coverImage}
+                  badge={stay.feelLabel}
+                  index={i}
+                  meta={
+                    <div className="flex gap-2">
+                      <Tag>{stay.walkingMinutes} min walk</Tag>
+                      <Tag>{stay.priceRange}</Tag>
+                    </div>
+                  }
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -159,21 +162,22 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {eats.map((eat, i) => (
-              <Card
-                key={eat.slug}
-                href={`/where-to-eat/${eat.slug}`}
-                title={eat.title}
-                subtitle={eat.subtitle}
-                coverImage={eat.coverImage}
-                badge={eat.cuisine}
-                index={i}
-                meta={
-                  <div className="flex gap-2">
-                    <Tag>{eat.priceRange}</Tag>
-                    {eat.mustTry && <Tag>{eat.mustTry}</Tag>}
-                  </div>
-                }
-              />
+              <div key={eat.slug} className={i === 2 ? "hidden md:block" : undefined}>
+                <Card
+                  href={`/where-to-eat/${eat.slug}`}
+                  title={eat.title}
+                  subtitle={eat.subtitle}
+                  coverImage={eat.coverImage}
+                  badge={eat.cuisine}
+                  index={i}
+                  meta={
+                    <div className="flex gap-2">
+                      <Tag>{eat.priceRange}</Tag>
+                      {eat.mustTry && <Tag>{eat.mustTry}</Tag>}
+                    </div>
+                  }
+                />
+              </div>
             ))}
           </div>
         </div>
