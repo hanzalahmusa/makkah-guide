@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 import { MDXContent } from "@/components/mdx/MDXContent";
 import { Badge } from "@/components/ui/Badge";
 import { Tag } from "@/components/ui/Tag";
-import { TimelineView } from "@/components/sections/TimelineView";
+import { CollapsibleRoute } from "@/components/sections/CollapsibleRoute";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
@@ -50,7 +50,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
       <article className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-3xl">
           {/* Header */}
-          <div className="mb-12">
+          <div className="mb-8">
             <Badge variant="sage">{itin.durationLabel}</Badge>
             <h1 className="mt-4 font-heading text-3xl text-ink md:text-5xl">
               {itin.title}
@@ -64,18 +64,15 @@ export default async function ItineraryDetailPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Timeline */}
+          {/* MDX body — contains "Who's it for" as collapsible */}
+          <MDXContent code={itin.body} />
+
+          {/* Collapsible route */}
           {itin.stops.length > 0 && (
-            <div className="mb-16">
-              <h2 className="mb-8 font-heading text-2xl text-ink">
-                The Route
-              </h2>
-              <TimelineView stops={itin.stops} />
+            <div className="mt-2">
+              <CollapsibleRoute stops={itin.stops} />
             </div>
           )}
-
-          {/* Content */}
-          <MDXContent code={itin.body} />
         </div>
       </article>
     </PageWrapper>

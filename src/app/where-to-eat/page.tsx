@@ -12,6 +12,7 @@ const filters = [
   { value: "worth-the-trip", label: "Worth the Trip" },
   { value: "clean-meals", label: "Clean Meals" },
   { value: "makkah-markets", label: "Makkah Markets" },
+  { value: "post-fajr-breakfast", label: "Post-Fajr Breakfast" },
 ];
 
 export default function WhereToEatPage() {

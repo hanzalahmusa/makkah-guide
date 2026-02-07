@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllEats, getEatBySlug } from "@/lib/content";
 import { createMetadata } from "@/lib/metadata";
 import { MDXContent } from "@/components/mdx/MDXContent";
@@ -56,36 +57,67 @@ export default async function EatDetailPage({ params }: Props) {
               {eat.title}
             </h1>
             <p className="mt-4 text-xl text-ink-light">{eat.subtitle}</p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Tag>{eat.priceRange}</Tag>
-              <Tag>{eat.location}</Tag>
-              {eat.hours && <Tag>{eat.hours}</Tag>}
-            </div>
           </div>
 
-          {/* Must try */}
-          {eat.mustTry && (
-            <div className="mb-12 rounded-xl border-l-4 border-l-gold bg-gold/5 p-6">
-              <p className="font-heading text-lg text-ink">Must try</p>
-              <p className="mt-1 text-ink-light">{eat.mustTry}</p>
-            </div>
-          )}
+          {/* At a glance */}
+          <div className="mb-12 rounded-2xl border border-sand-dark bg-white p-8">
+            <h2 className="mb-6 font-heading text-xl text-ink">
+              {eat.title} — At a glance
+            </h2>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-sm">
+                <span className="mt-0.5 shrink-0 font-semibold text-ink">Price</span>
+                <span className="text-ink-light">{eat.priceRange}</span>
+              </li>
+              {eat.bestForTag && (
+                <li className="flex items-start gap-3 text-sm">
+                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Best for</span>
+                  <span className="text-ink-light">{eat.bestForTag}</span>
+                </li>
+              )}
+              {eat.skipIf && (
+                <li className="flex items-start gap-3 text-sm">
+                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Skip if</span>
+                  <span className="text-ink-light">{eat.skipIf}</span>
+                </li>
+              )}
+              {eat.distanceFromHaram && (
+                <li className="flex items-start gap-3 text-sm">
+                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Distance from Al Haram</span>
+                  <span className="text-ink-light">{eat.distanceFromHaram}</span>
+                </li>
+              )}
+              <li className="flex items-start gap-3 text-sm">
+                <span className="mt-0.5 shrink-0 font-semibold text-ink">Location</span>
+                <span className="text-ink-light">{eat.location}</span>
+              </li>
+              {eat.hours && (
+                <li className="flex items-start gap-3 text-sm">
+                  <span className="mt-0.5 shrink-0 font-semibold text-ink">Hours</span>
+                  <span className="text-ink-light">{eat.hours}</span>
+                </li>
+              )}
+            </ul>
+          </div>
 
-          {/* Best for */}
-          {eat.bestFor.length > 0 && (
-            <div className="mb-12">
-              <h3 className="mb-3 font-heading text-lg text-ink">Best for</h3>
-              <div className="flex flex-wrap gap-2">
-                {eat.bestFor.map((item, i) => (
-                  <Tag key={i}>{item}</Tag>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Content */}
+          {/* Content — contains "What to order" and "What's our take" as collapsibles */}
           <MDXContent code={eat.body} />
+
+          {/* CTA row */}
+          <div className="mt-16 rounded-2xl bg-ink p-8 text-center">
+            <h3 className="font-heading text-xl text-white">
+              Best bites by Al Haram
+            </h3>
+            <p className="mt-2 text-sm text-white/70">
+              Explore all our tested and loved restaurants near Masjid al-Haram.
+            </p>
+            <Link
+              href="/where-to-eat"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-sage px-6 py-3 text-sm font-semibold text-ink transition-all hover:bg-sage-dark"
+            >
+              Browse All Restaurants
+            </Link>
+          </div>
         </div>
       </article>
     </PageWrapper>

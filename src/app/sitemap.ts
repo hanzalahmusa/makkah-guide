@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/where-to-stay",
     "/where-to-eat",
     "/about",
+    "/contact",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: new Date(),

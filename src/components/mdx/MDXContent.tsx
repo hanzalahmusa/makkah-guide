@@ -1,5 +1,6 @@
 import * as runtime from "react/jsx-runtime";
 import { CalloutBox } from "@/components/ui/CalloutBox";
+import { Collapsible } from "@/components/ui/Collapsible";
 
 const useMDXComponent = (code: string) => {
   const fn = new Function(code);
@@ -8,6 +9,7 @@ const useMDXComponent = (code: string) => {
 
 const components = {
   CalloutBox,
+  Collapsible,
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1 className="font-heading text-3xl md:text-5xl" {...props} />
   ),

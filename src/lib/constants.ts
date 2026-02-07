@@ -48,6 +48,7 @@ export const EAT_CATEGORIES = [
   "worth-the-trip",
   "clean-meals",
   "makkah-markets",
+  "post-fajr-breakfast",
 ] as const;
 
 export const ITINERARY_DURATIONS = [
