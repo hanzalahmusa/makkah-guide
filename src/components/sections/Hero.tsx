@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 const heroImages = [
-  { src: "/images/shared/hero-hera.jpg", alt: "Hera Cultural District" },
-  { src: "/images/shared/hero-wadi.jpg", alt: "Wadi Fatima" },
+  { src: "/images/shared/hero-hera.jpg", alt: "Trail to Cave Hira" },
+  { src: "/images/shared/hero-wadi.jpg", alt: "Masjid al-Haram" },
   { src: "/images/shared/hero-kiswa.jpg", alt: "Kiswa Exhibition" },
 ];
 
