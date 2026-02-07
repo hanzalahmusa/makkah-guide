@@ -10,7 +10,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 const filters = [
   { value: "near-haram", label: "Near Al Haram (Actually Good)" },
   { value: "worth-the-trip", label: "Worth the Trip" },
-  { value: "clean-meals", label: "Clean Meals" },
+  { value: "clean-meals", label: "Clean-ish Meals" },
   { value: "makkah-markets", label: "Makkah Markets" },
   { value: "post-fajr-breakfast", label: "Post-Fajr Breakfast" },
 ];
