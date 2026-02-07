@@ -128,15 +128,15 @@ export function Hero() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
                 <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
-                <span>You&apos;re new to your <strong>first Umrah</strong></span>
+                <span>You&apos;re getting to grips with your <strong>first Umrah</strong></span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
                 <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
-                <span>You need fiqh or <strong>ritual guidance</strong></span>
+                <span>You&apos;re looking for fiqh, rulings or <strong>ritual guidance</strong></span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
                 <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
-                <span>You have a full tour <strong>itinerary</strong></span>
+                <span>You already have a full <strong>itinerary</strong> with a tour group</span>
               </li>
             </ul>
           </div>
