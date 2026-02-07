@@ -40,12 +40,12 @@ export function Card({
     >
       <Link
         href={href}
-        className={`group block overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
+        className={`group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
           featured ? "md:grid md:grid-cols-[2fr_1fr]" : ""
         }`}
       >
         <div
-          className={`relative overflow-hidden ${
+          className={`relative shrink-0 overflow-hidden ${
             featured ? "aspect-[16/9] md:aspect-auto" : "aspect-[3/2]"
           }`}
         >
@@ -62,14 +62,14 @@ export function Card({
             </div>
           )}
         </div>
-        <div className="p-6">
+        <div className="flex flex-1 flex-col p-6">
           <h3 className="font-heading text-xl text-ink transition-colors group-hover:text-gold">
             {title}
           </h3>
           <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-ink-light">
             {subtitle}
           </p>
-          {meta && <div className="mt-4">{meta}</div>}
+          {meta && <div className="mt-auto pt-4">{meta}</div>}
         </div>
       </Link>
     </motion.div>
