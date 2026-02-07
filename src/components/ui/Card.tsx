@@ -36,7 +36,7 @@ export function Card({
       initial={{ opacity: 0, y: 24 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
       transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-      className={featured ? "md:col-span-2" : ""}
+      className={featured ? "h-full md:col-span-2" : "h-full"}
     >
       <Link
         href={href}
