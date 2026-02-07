@@ -13,6 +13,7 @@ const filters = [
   { value: "clean-meals", label: "Clean-ish Meals" },
   { value: "makkah-markets", label: "Makkah Markets" },
   { value: "post-fajr-breakfast", label: "Post-Fajr Breakfast" },
+  { value: "local-kitchen-delivery", label: "Local Kitchen Delivery" },
 ];
 
 export default function WhereToEatPage() {

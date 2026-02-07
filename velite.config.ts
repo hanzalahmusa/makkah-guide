@@ -99,6 +99,7 @@ const eats = defineCollection({
       "clean-meals",
       "makkah-markets",
       "post-fajr-breakfast",
+      "local-kitchen-delivery",
     ]),
     cuisine: s.string(),
     location: s.string(),

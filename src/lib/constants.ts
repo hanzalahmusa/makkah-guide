@@ -50,6 +50,7 @@ export const EAT_CATEGORIES = [
   "clean-meals",
   "makkah-markets",
   "post-fajr-breakfast",
+  "local-kitchen-delivery",
 ] as const;
 
 export const ITINERARY_DURATIONS = [
