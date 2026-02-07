@@ -16,7 +16,7 @@ export function FeaturedGrid() {
   return (
     <>
       {/* Experiences */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-6 py-12 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex items-end justify-between">
             <div>
@@ -57,7 +57,7 @@ export function FeaturedGrid() {
       </section>
 
       {/* Itineraries — alternating bg */}
-      <section className="bg-sand-dark/40 px-6 py-24 md:py-32">
+      <section className="bg-sand-dark/40 px-6 py-12 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex items-end justify-between">
             <div>
@@ -98,7 +98,7 @@ export function FeaturedGrid() {
       </section>
 
       {/* Stays & Eats side by side */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-6 py-12 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>

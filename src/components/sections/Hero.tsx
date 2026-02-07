@@ -54,7 +54,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="px-6 py-16 md:py-24">
+      <div className="px-6 py-12 md:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-ink">
             Your Independent City Guide
@@ -81,7 +81,7 @@ export function Hero() {
         </p>
 
         {/* Who this is for */}
-        <div className="mx-auto mt-16 max-w-md">
+        <div className="mx-auto mt-10 max-w-md">
           <div className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
             <h3 className="mb-5 text-center font-heading text-lg text-ink">This is for you if…</h3>
             <ul className="space-y-3">
