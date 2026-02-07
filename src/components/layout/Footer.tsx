@@ -23,14 +23,14 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="border-t border-sage-dark bg-sage text-white">
-      <div className="mx-auto max-w-7xl px-6 py-8 md:py-12">
-        <div className="grid gap-8 md:grid-cols-[2fr_1fr_1fr]">
+      <div className="mx-auto max-w-7xl px-6 py-6 md:py-10">
+        <div className="grid gap-5 md:grid-cols-[2fr_1fr_1fr]">
           {/* Brand column */}
           <div>
             <Link href="/" className="font-heading text-2xl">
               {SITE_NAME}
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
+            <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/70">
               You know the rituals. We help with everything beyond them. An
               independent city guide beyond the usual.
             </p>
@@ -58,7 +58,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
+        <div className="mt-5 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 md:flex-row">
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
           </p>
