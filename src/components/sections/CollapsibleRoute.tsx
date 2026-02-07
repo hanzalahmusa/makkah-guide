@@ -145,15 +145,18 @@ export function CollapsibleRoute({ stops }: CollapsibleRouteProps) {
       <div className="space-y-2">
         {days.map(({ day, periods }) => (
           <CollapsibleBlock key={day} title={day} level="h3">
-            <div className="space-y-1 pl-2">
+            <div className="space-y-4 pl-2">
               {periods.map(({ period, stops: periodStops }) => (
-                <CollapsibleBlock key={period} title={period} level="h4">
+                <div key={period}>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-ink-light">
+                    {period}
+                  </p>
                   <div className="space-y-0 pl-2">
                     {periodStops.map(({ stop, origIndex }) => (
                       <StopItem key={origIndex} stop={stop} index={origIndex} />
                     ))}
                   </div>
-                </CollapsibleBlock>
+                </div>
               ))}
             </div>
           </CollapsibleBlock>
