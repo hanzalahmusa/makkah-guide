@@ -113,7 +113,7 @@ export default async function EatDetailPage({ params }: Props) {
             </p>
             <Link
               href="/where-to-eat"
-              className="mt-6 inline-flex items-center justify-center rounded-full bg-sage px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-sage-dark"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-sage px-6 py-3 text-sm font-semibold text-ink transition-all hover:bg-sage-dark"
             >
               Browse All Restaurants
             </Link>
