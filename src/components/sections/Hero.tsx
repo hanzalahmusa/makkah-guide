@@ -22,8 +22,8 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* Hero with overlay text */}
-      <div className="relative h-[60vh] min-h-[400px] w-full md:h-[85vh] md:min-h-[500px]">
+      {/* Rotating hero images */}
+      <div className="relative h-[300px] w-full md:h-[500px]">
         {heroImages.map((img, i) => (
           <div
             key={img.src}
@@ -39,47 +39,21 @@ export function Hero() {
             />
           </div>
         ))}
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-white" />
-
-        {/* Overlay text content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/90 drop-shadow-md">
-            Your Independent City Guide
-          </p>
-          <h1 className="max-w-4xl text-center font-heading text-4xl leading-tight text-white drop-shadow-lg md:text-7xl">
-            You know the rituals.
-            <br />
-            <span className="text-white/80">We help with everything beyond them.</span>
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-center text-lg leading-relaxed text-white/80 drop-shadow-md md:text-xl">
-            For those who already know the core of Makkah — this guide handles
-            everything else. Ways to move through the city beyond the obvious.
-          </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="/experiences" size="lg">
-              Browse Experiences
-            </Button>
-            <Button href="/where-to-stay" variant="outline-light" size="lg">
-              Where to Stay
-            </Button>
-          </div>
-        </div>
-
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
         {/* Caption */}
-        <div className="absolute bottom-20 left-0 right-0 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-ink-light/60">
+        <div className="absolute bottom-4 left-0 right-0 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-white/80 drop-shadow-md">
             {heroImages[current].alt}
           </p>
         </div>
         {/* Dots */}
-        <div className="absolute bottom-20 right-6 flex gap-2">
+        <div className="absolute bottom-4 right-6 flex gap-2">
           {heroImages.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
               className={`h-2 w-2 rounded-full transition-colors ${
-                i === current ? "bg-ink" : "bg-ink/30"
+                i === current ? "bg-white" : "bg-white/40"
               }`}
               aria-label={`Show image ${i + 1}`}
             />
@@ -88,8 +62,31 @@ export function Hero() {
       </div>
 
       <div className="px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-sage">
+            Your Independent City Guide
+          </p>
+          <h1 className="font-heading text-4xl leading-tight text-ink md:text-7xl">
+            You know the rituals.
+            <br />
+            <span className="text-sage">We help with everything beyond them.</span>
+          </h1>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-ink-light md:text-xl">
+            For those who already know the core of Makkah — this guide handles
+            everything else. Ways to move through the city beyond the obvious.
+          </p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Button href="/experiences" size="lg">
+              Browse Experiences
+            </Button>
+            <Button href="/where-to-stay" variant="outline" size="lg">
+              Where to Stay
+            </Button>
+          </div>
+        </div>
+
         {/* Trust signal */}
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-light/50">
+        <p className="mt-12 text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-light/50">
           Independent · Local · Opinionated
         </p>
 
