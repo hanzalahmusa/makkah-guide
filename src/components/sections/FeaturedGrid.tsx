@@ -29,7 +29,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/experiences"
-              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
+              className="text-sm font-medium text-ink-light hover:text-ink"
             >
               View all &rarr;
             </a>
@@ -71,7 +71,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/itineraries"
-              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
+              className="text-sm font-medium text-ink-light hover:text-ink"
             >
               View all &rarr;
             </a>
@@ -113,7 +113,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/where-to-stay"
-              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
+              className="text-sm font-medium text-ink-light hover:text-ink"
             >
               View all &rarr;
             </a>
@@ -155,7 +155,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/where-to-eat"
-              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
+              className="text-sm font-medium text-ink-light hover:text-ink"
             >
               View all &rarr;
             </a>
