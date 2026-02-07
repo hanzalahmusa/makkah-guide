@@ -36,7 +36,7 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {experiences.map((exp, i) => (
-              <div key={exp.slug} className={i === 2 ? "hidden md:block" : undefined}>
+              <div key={exp.slug} className={i === 2 ? "hidden h-full md:block" : "h-full"}>
                 <Card
                   href={`/experiences/${exp.slug}`}
                   title={exp.title}
@@ -78,7 +78,7 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {itineraries.map((itin, i) => (
-              <div key={itin.slug} className={i === 2 ? "hidden md:block" : undefined}>
+              <div key={itin.slug} className={i === 2 ? "hidden h-full md:block" : "h-full"}>
                 <Card
                   href={`/itineraries/${itin.slug}`}
                   title={itin.title}
@@ -120,7 +120,7 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {stays.map((stay, i) => (
-              <div key={stay.slug} className={i === 2 ? "hidden md:block" : undefined}>
+              <div key={stay.slug} className={i === 2 ? "hidden h-full md:block" : "h-full"}>
                 <Card
                   href={`/where-to-stay/${stay.slug}`}
                   title={stay.title}
@@ -162,7 +162,7 @@ export function FeaturedGrid() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {eats.map((eat, i) => (
-              <div key={eat.slug} className={i === 2 ? "hidden md:block" : undefined}>
+              <div key={eat.slug} className={i === 2 ? "hidden h-full md:block" : "h-full"}>
                 <Card
                   href={`/where-to-eat/${eat.slug}`}
                   title={eat.title}
