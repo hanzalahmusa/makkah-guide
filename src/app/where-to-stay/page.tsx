@@ -8,11 +8,10 @@ import { FilterBar } from "@/components/ui/FilterBar";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 
 const filters = [
-  { value: "quiet-grounding", label: "Quiet & Grounding" },
-  { value: "close-convenient", label: "Close & Convenient" },
+  { value: "very-close", label: "Very Close to Al Haram" },
+  { value: "budget-conscious", label: "Budget-Conscious" },
   { value: "family-friendly", label: "Family Friendly" },
-  { value: "long-stay", label: "Long Stay" },
-  { value: "budget", label: "Budget" },
+  { value: "quiet-grounding", label: "Quiet & Grounding" },
 ];
 
 export default function WhereToStayPage() {

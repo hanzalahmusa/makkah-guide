@@ -12,7 +12,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-sand-dark bg-sand/90 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-heading text-2xl text-ink">
-          Makkah Guide
+          Experience Makkah
         </Link>
 
         {/* Desktop nav */}
@@ -26,12 +26,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/free-guide"
-            className="rounded-full bg-sage px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-sage-dark"
-          >
-            Get the Free Guide
-          </Link>
         </div>
 
         {/* Mobile menu button */}

@@ -10,14 +10,10 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
-    "/start-here",
     "/experiences",
     "/itineraries",
     "/where-to-stay",
     "/where-to-eat",
-    "/getting-around",
-    "/practical-wisdom",
-    "/free-guide",
     "/about",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,

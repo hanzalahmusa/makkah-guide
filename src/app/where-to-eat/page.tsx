@@ -8,12 +8,10 @@ import { FilterBar } from "@/components/ui/FilterBar";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 
 const filters = [
-  { value: "near-haram", label: "Near Haram (Actually Good)" },
-  { value: "local-favourite", label: "Local Favourites" },
-  { value: "late-night", label: "Late-Night Eats" },
-  { value: "family", label: "Clean & Simple Family Food" },
-  { value: "quick-bite", label: "Quick Bite" },
-  { value: "special-occasion", label: "Special Occasion" },
+  { value: "near-haram", label: "Near Al Haram (Actually Good)" },
+  { value: "worth-the-trip", label: "Worth the Trip" },
+  { value: "clean-meals", label: "Clean Meals" },
+  { value: "makkah-markets", label: "Makkah Markets" },
 ];
 
 export default function WhereToEatPage() {

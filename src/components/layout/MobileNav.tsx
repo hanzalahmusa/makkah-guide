@@ -18,7 +18,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-50 bg-sand"
+          className="fixed inset-0 z-[100] bg-white"
         >
           <div className="flex h-full flex-col px-6 py-4">
             {/* Header */}
@@ -28,7 +28,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                 onClick={onClose}
                 className="font-heading text-2xl text-ink"
               >
-                Makkah Guide
+                Experience Makkah
               </Link>
               <button onClick={onClose} aria-label="Close menu">
                 <svg
@@ -73,21 +73,6 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
               ))}
             </div>
 
-            {/* CTA */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="pb-8"
-            >
-              <Link
-                href="/free-guide"
-                onClick={onClose}
-                className="block w-full rounded-full bg-sage py-4 text-center text-lg font-semibold text-white transition-colors hover:bg-sage-dark"
-              >
-                Get the Free Guide
-              </Link>
-            </motion.div>
           </div>
         </motion.div>
       )}

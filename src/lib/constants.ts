@@ -1,15 +1,13 @@
-export const SITE_NAME = "Makkah Guide";
+export const SITE_NAME = "Experience Makkah";
 export const SITE_DESCRIPTION =
   "You know the rituals. We help with everything beyond them.";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://makkahguide.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://experiencemakkah.com";
 
 export const NAV_LINKS = [
-  { label: "Start Here", href: "/start-here" },
   { label: "Experiences", href: "/experiences" },
   { label: "Where to Stay", href: "/where-to-stay" },
   { label: "Where to Eat", href: "/where-to-eat" },
-  { label: "Getting Around", href: "/getting-around" },
-  { label: "Practical Wisdom", href: "/practical-wisdom" },
+  { label: "About", href: "/about" },
 ] as const;
 
 export const MOBILE_NAV_GROUPS = [
@@ -23,38 +21,32 @@ export const MOBILE_NAV_GROUPS = [
     ],
   },
   {
-    label: "Know",
+    label: "More",
     links: [
-      { label: "Start Here", href: "/start-here" },
-      { label: "Getting Around", href: "/getting-around" },
-      { label: "Practical Wisdom", href: "/practical-wisdom" },
       { label: "About", href: "/about" },
     ],
   },
 ] as const;
 
 export const EXPERIENCE_CATEGORIES = [
-  "spiritual-depth",
-  "history-heritage",
-  "nature-reflection",
-  "culture-daily-life",
+  "spiritual-reflective",
+  "historical-makkah",
+  "nature-stillness",
+  "everyday-makkah",
 ] as const;
 
 export const STAY_FEELS = [
-  "quiet-grounding",
-  "close-convenient",
+  "very-close",
+  "budget-conscious",
   "family-friendly",
-  "long-stay",
-  "budget",
+  "quiet-grounding",
 ] as const;
 
 export const EAT_CATEGORIES = [
   "near-haram",
-  "local-favourite",
-  "late-night",
-  "family",
-  "quick-bite",
-  "special-occasion",
+  "worth-the-trip",
+  "clean-meals",
+  "makkah-markets",
 ] as const;
 
 export const ITINERARY_DURATIONS = [

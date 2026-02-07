@@ -9,10 +9,10 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { EXPERIENCE_CATEGORIES } from "@/lib/constants";
 
 const CATEGORY_LABELS: Record<string, string> = {
-  "spiritual-depth": "Spiritual Depth",
-  "history-heritage": "History & Heritage",
-  "nature-reflection": "Nature & Reflection",
-  "culture-daily-life": "Culture & Daily Life",
+  "spiritual-reflective": "Spiritual & Reflective",
+  "historical-makkah": "Historical Makkah",
+  "nature-stillness": "Nature & Stillness",
+  "everyday-makkah": "Everyday Makkah",
 };
 
 const filters = EXPERIENCE_CATEGORIES.map((c) => ({

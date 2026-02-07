@@ -6,7 +6,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 export const metadata = createMetadata({
   title: "About",
   description:
-    "About the Makkah Guide — an independent, editorial city guide for repeat Umrah visitors.",
+    "About Experience Makkah — an independent, editorial city guide for repeat Umrah visitors.",
   path: "/about",
 });
 
