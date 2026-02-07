@@ -23,8 +23,8 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="border-t border-sage-dark bg-sage text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-[2fr_1fr_1fr]">
+      <div className="mx-auto max-w-7xl px-6 py-8 md:py-12">
+        <div className="grid gap-8 md:grid-cols-[2fr_1fr_1fr]">
           {/* Brand column */}
           <div>
             <Link href="/" className="font-heading text-2xl">
@@ -58,7 +58,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
           </p>
