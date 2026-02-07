@@ -82,19 +82,19 @@ export function Hero() {
 
         {/* Who this is for */}
         <div className="mx-auto mt-10 max-w-md">
-          <div className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
+          <div className="rounded-2xl border border-sage/20 bg-sage/5 p-8">
             <h3 className="mb-5 text-center font-heading text-lg text-ink">This is for you if…</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-gold">&#10003;</span>
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
                 <span>You&apos;ve <strong>already</strong> performed Umrah</span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-gold">&#10003;</span>
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
                 <span>You&apos;re looking to <strong>explore</strong> the city</span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-gold">&#10003;</span>
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
                 <span>You value <strong>honest</strong> recommendations</span>
               </li>
             </ul>

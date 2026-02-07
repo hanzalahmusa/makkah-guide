@@ -10,9 +10,9 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-sand-dark bg-sand/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-sage-dark bg-sage backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link href="/" className="font-heading text-2xl text-ink">
+          <Link href="/" className="font-heading text-2xl text-white">
             Experience Makkah
           </Link>
 
@@ -22,7 +22,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-sm font-medium text-ink-light transition-colors hover:text-ink after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-ink after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-sm font-medium text-white/80 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -32,7 +32,7 @@ export function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(true)}
-            className="lg:hidden"
+            className="text-white lg:hidden"
             aria-label="Open menu"
           >
             <svg

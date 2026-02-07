@@ -104,7 +104,7 @@ export default async function EatDetailPage({ params }: Props) {
           <MDXContent code={eat.body} />
 
           {/* CTA row */}
-          <div className="mt-16 rounded-2xl bg-ink p-8 text-center">
+          <div className="mt-16 rounded-2xl bg-sage p-8 text-center">
             <h3 className="font-heading text-xl text-white">
               Best bites by Al Haram
             </h3>
