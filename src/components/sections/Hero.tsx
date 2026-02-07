@@ -56,7 +56,7 @@ export function Hero() {
 
       <div className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-sage">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-ink">
             Your Independent City Guide
           </p>
           <h1 className="font-heading text-4xl leading-tight text-ink md:text-7xl">
@@ -82,10 +82,10 @@ export function Hero() {
 
         {/* Who this is for / not for */}
         <div className="mx-auto mt-16 grid max-w-3xl gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-sage/20 bg-sage/5 p-8">
+          <div className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
             <div className="mb-5 flex flex-col items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sage/10">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-sage">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/10">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gold">
                   <path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
@@ -93,15 +93,15 @@ export function Hero() {
             </div>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span className="mt-px shrink-0 text-gold">&#10003;</span>
                 <span>You&apos;ve <strong>already</strong> performed Umrah</span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span className="mt-px shrink-0 text-gold">&#10003;</span>
                 <span>You&apos;re looking to <strong>explore</strong> the city</span>
               </li>
               <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
-                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span className="mt-px shrink-0 text-gold">&#10003;</span>
                 <span>You value <strong>honest</strong> recommendations</span>
               </li>
             </ul>

@@ -18,15 +18,15 @@
 }
 
 :root {
-  --color-sand: #F8F7F4;
-  --color-sand-dark: #EAE8E3;
-  --color-ink: #1D3A3A;
-  --color-ink-light: #6B8181;
-  --color-sage: #2A9D8F;
-  --color-sage-dark: #21877A;
-  --color-gold: #E9A820;
-  --color-gold-light: #F5D78E;
-  --color-clay: #D4855A;
+  --color-sand: #F7F6F3;
+  --color-sand-dark: #EBEAE6;
+  --color-ink: #1E2A38;
+  --color-ink-light: #8A8F98;
+  --color-sage: #F2C94C;
+  --color-sage-dark: #E0B830;
+  --color-gold: #2F8F83;
+  --color-gold-light: #A8D4CE;
+  --color-clay: #2F8F83;
   --color-white: #FFFFFF;
 }
 
@@ -75,12 +75,12 @@ h1, h2, h3, h4, h5, h6 {
 .prose {
   --tw-prose-body: var(--color-ink);
   --tw-prose-headings: var(--color-ink);
-  --tw-prose-links: var(--color-sage-dark);
+  --tw-prose-links: var(--color-gold);
   --tw-prose-bold: var(--color-ink);
   --tw-prose-quotes: var(--color-ink-light);
-  --tw-prose-quote-borders: var(--color-sage);
+  --tw-prose-quote-borders: var(--color-gold);
   --tw-prose-counters: var(--color-ink-light);
-  --tw-prose-bullets: var(--color-sage);
+  --tw-prose-bullets: var(--color-gold);
   --tw-prose-hr: var(--color-sand-dark);
 }
 
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose a {
-  text-decoration-color: var(--color-sage);
+  text-decoration-color: var(--color-gold);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s;
 }

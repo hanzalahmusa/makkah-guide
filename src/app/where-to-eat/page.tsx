@@ -24,7 +24,7 @@ export default function WhereToEatPage() {
     <PageWrapper>
       <section className="px-6 py-24 md:py-32">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+          <p className="text-sm font-semibold uppercase tracking-widest text-ink">
             Tested & Loved
           </p>
           <h1 className="mt-2 font-heading text-3xl text-ink md:text-5xl">

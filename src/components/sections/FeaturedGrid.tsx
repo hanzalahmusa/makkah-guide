@@ -20,7 +20,7 @@ export function FeaturedGrid() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+              <p className="text-sm font-semibold uppercase tracking-widest text-ink">
                 Curated
               </p>
               <h2 className="mt-1 font-heading text-3xl text-ink md:text-4xl">
@@ -29,7 +29,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/experiences"
-              className="hidden text-sm font-medium text-sage-dark hover:text-sage md:block"
+              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
             >
               View all &rarr;
             </a>
@@ -61,7 +61,7 @@ export function FeaturedGrid() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+              <p className="text-sm font-semibold uppercase tracking-widest text-ink">
                 Ready-Made Plans
               </p>
               <h2 className="mt-1 font-heading text-3xl text-ink md:text-4xl">
@@ -70,7 +70,7 @@ export function FeaturedGrid() {
             </div>
             <a
               href="/itineraries"
-              className="hidden text-sm font-medium text-sage-dark hover:text-sage md:block"
+              className="hidden text-sm font-medium text-ink-light hover:text-ink md:block"
             >
               View all &rarr;
             </a>
@@ -103,7 +103,7 @@ export function FeaturedGrid() {
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
               <div className="mb-10">
-                <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+                <p className="text-sm font-semibold uppercase tracking-widest text-ink">
                   Recommended
                 </p>
                 <h2 className="mt-1 font-heading text-3xl text-ink">
@@ -133,7 +133,7 @@ export function FeaturedGrid() {
 
             <div>
               <div className="mb-10">
-                <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+                <p className="text-sm font-semibold uppercase tracking-widest text-ink">
                   Tested & Loved
                 </p>
                 <h2 className="mt-1 font-heading text-3xl text-ink">

@@ -63,7 +63,7 @@ export function Card({
           )}
         </div>
         <div className="p-6">
-          <h3 className="font-heading text-xl text-ink transition-colors group-hover:text-sage">
+          <h3 className="font-heading text-xl text-ink transition-colors group-hover:text-gold">
             {title}
           </h3>
           <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-ink-light">
