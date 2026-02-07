@@ -6,7 +6,7 @@ interface BadgeProps {
 }
 
 const variants = {
-  default: "bg-sand-dark text-ink-light",
+  default: "bg-gold/10 text-gold",
   sage: "bg-sage/10 text-sage-dark",
   gold: "bg-gold/10 text-gold",
   clay: "bg-clay/10 text-clay",

@@ -28,6 +28,7 @@
   --color-gold-light: #A8D4CE;
   --color-clay: #2F8F83;
   --color-white: #FFFFFF;
+  --color-text: #2B2B2B;
 }
 
 @theme inline {
@@ -47,7 +48,7 @@
 
 body {
   background-color: var(--color-sand);
-  color: var(--color-ink);
+  color: var(--color-text);
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
@@ -73,10 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Prose overrides for MDX content */
 .prose {
-  --tw-prose-body: var(--color-ink);
+  --tw-prose-body: var(--color-text);
   --tw-prose-headings: var(--color-ink);
   --tw-prose-links: var(--color-gold);
-  --tw-prose-bold: var(--color-ink);
+  --tw-prose-bold: var(--color-text);
   --tw-prose-quotes: var(--color-ink-light);
   --tw-prose-quote-borders: var(--color-gold);
   --tw-prose-counters: var(--color-ink-light);
