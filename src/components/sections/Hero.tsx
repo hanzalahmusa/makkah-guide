@@ -91,21 +91,53 @@ export function Hero() {
         </p>
 
         {/* Who this is for / not for */}
-        <div className="mx-auto mt-16 grid max-w-2xl gap-8 text-left sm:grid-cols-2">
-          <div>
-            <h3 className="font-heading text-lg text-ink">This is for you if…</h3>
-            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink-light">
-              <li>You&apos;ve <strong>already</strong> performed Umrah</li>
-              <li>You&apos;re looking to <strong>explore</strong> the city</li>
-              <li>You value <strong>honest</strong> recommendations</li>
+        <div className="mx-auto mt-16 grid max-w-3xl gap-6 sm:grid-cols-2">
+          <div className="rounded-2xl border border-sage/20 bg-sage/5 p-8">
+            <div className="mb-5 flex flex-col items-center gap-2">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sage/10">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-sage">
+                  <path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <h3 className="font-heading text-lg text-ink">This is for you if…</h3>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span>You&apos;ve <strong>already</strong> performed Umrah</span>
+              </li>
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span>You&apos;re looking to <strong>explore</strong> the city</span>
+              </li>
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-sage">&#10003;</span>
+                <span>You value <strong>honest</strong> recommendations</span>
+              </li>
             </ul>
           </div>
-          <div>
-            <h3 className="font-heading text-lg text-ink">This isn&apos;t for you if…</h3>
-            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink-light">
-              <li>You&apos;re getting to grips with your <strong>first Umrah</strong></li>
-              <li>You&apos;re looking for fiqh, rulings or <strong>ritual guidance</strong></li>
-              <li>You already have a full <strong>itinerary</strong> with a tour group</li>
+          <div className="rounded-2xl border border-sand-dark bg-white p-8">
+            <div className="mb-5 flex flex-col items-center gap-2">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sand-dark">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-ink-light">
+                  <path d="M11 3L3 11M3 3l8 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </span>
+              <h3 className="font-heading text-lg text-ink">This isn&apos;t for you if…</h3>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
+                <span>You&apos;re new to your <strong>first Umrah</strong></span>
+              </li>
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
+                <span>You need fiqh or <strong>ritual guidance</strong></span>
+              </li>
+              <li className="flex items-start gap-2.5 text-[13px] leading-snug text-ink-light">
+                <span className="mt-px shrink-0 text-ink-light/40">&times;</span>
+                <span>You have a full tour <strong>itinerary</strong></span>
+              </li>
             </ul>
           </div>
         </div>
