@@ -95,17 +95,17 @@ export function Hero() {
           <div>
             <h3 className="font-heading text-lg text-ink">This is for you if…</h3>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink-light">
-              <li>You&apos;ve already performed Umrah</li>
-              <li>You&apos;re looking to explore the city</li>
-              <li>You value honest recommendations</li>
+              <li>You&apos;ve <strong>already</strong> performed Umrah</li>
+              <li>You&apos;re looking to <strong>explore</strong> the city</li>
+              <li>You value <strong>honest</strong> recommendations</li>
             </ul>
           </div>
           <div>
             <h3 className="font-heading text-lg text-ink">This isn&apos;t for you if…</h3>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink-light">
-              <li>You&apos;re getting to grips with your first Umrah</li>
-              <li>You&apos;re looking for fiqh, rulings or ritual guidance</li>
-              <li>You already have a full itinerary with a tour group</li>
+              <li>You&apos;re getting to grips with your <strong>first Umrah</strong></li>
+              <li>You&apos;re looking for fiqh, rulings or <strong>ritual guidance</strong></li>
+              <li>You already have a full <strong>itinerary</strong> with a tour group</li>
             </ul>
           </div>
         </div>
