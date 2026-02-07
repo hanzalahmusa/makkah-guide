@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Hero with overlay text */}
-      <div className="relative h-[85vh] min-h-[500px] w-full">
+      <div className="relative h-[60vh] min-h-[400px] w-full md:h-[85vh] md:min-h-[500px]">
         {heroImages.map((img, i) => (
           <div
             key={img.src}
@@ -60,7 +60,7 @@ export function Hero() {
             <Button href="/experiences" size="lg">
               Browse Experiences
             </Button>
-            <Button href="/where-to-stay" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-ink">
+            <Button href="/where-to-stay" variant="outline-light" size="lg">
               Where to Stay
             </Button>
           </div>
