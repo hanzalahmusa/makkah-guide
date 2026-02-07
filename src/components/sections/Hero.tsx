@@ -40,14 +40,8 @@ export function Hero() {
           </div>
         ))}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
-        {/* Caption */}
-        <div className="absolute bottom-4 left-0 right-0 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-white/80 drop-shadow-md">
-            {heroImages[current].alt}
-          </p>
-        </div>
         {/* Dots */}
-        <div className="absolute bottom-4 right-6 flex gap-2">
+        <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
           {heroImages.map((_, i) => (
             <button
               key={i}
@@ -61,7 +55,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="px-6 py-24 md:py-32">
+      <div className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-sage">
             Your Independent City Guide
@@ -73,14 +67,11 @@ export function Hero() {
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-ink-light md:text-xl">
             For those who already know the core of Makkah — this guide handles
-            everything else. Ways to move through the city beyond the obvious.
+            everything else. Discover ways to move through the city beyond the obvious.
           </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-10">
             <Button href="/experiences" size="lg">
               Browse Experiences
-            </Button>
-            <Button href="/where-to-stay" variant="outline" size="lg">
-              Where to Stay
             </Button>
           </div>
         </div>

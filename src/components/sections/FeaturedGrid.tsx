@@ -9,7 +9,7 @@ import {
 
 export function FeaturedGrid() {
   const experiences = getFeaturedExperiences().slice(0, 3);
-  const itineraries = getFeaturedItineraries().slice(0, 3);
+  const itineraries = getFeaturedItineraries().slice(0, 2);
   const stays = getFeaturedStays().slice(0, 2);
   const eats = getFeaturedEats().slice(0, 2);
 
@@ -75,7 +75,7 @@ export function FeaturedGrid() {
               View all &rarr;
             </a>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {itineraries.map((itin, i) => (
               <Card
                 key={itin.slug}

@@ -31,7 +31,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
               You know the rituals. We help with everything beyond them. An
-              independent city guide for repeat Umrah visitors.
+              independent city guide beyond the usual.
             </p>
           </div>
 
