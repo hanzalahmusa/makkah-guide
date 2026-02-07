@@ -74,11 +74,11 @@ export default async function EatDetailPage({ params }: Props) {
           <MDXContent code={eat.body} />
 
           {/* CTA row */}
-          <div className="mt-16 rounded-2xl bg-sage p-8 text-center">
-            <h3 className="font-heading text-xl text-white">
+          <div className="mt-16 rounded-2xl bg-sage/10 p-8 text-center">
+            <h3 className="font-heading text-xl text-ink">
               Best bites by Al Haram
             </h3>
-            <p className="mt-2 text-sm text-white/70">
+            <p className="mt-2 text-sm text-ink-light">
               Explore all our tested and loved restaurants near Masjid al-Haram.
             </p>
             <Link
