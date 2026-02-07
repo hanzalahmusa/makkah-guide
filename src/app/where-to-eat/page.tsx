@@ -25,7 +25,7 @@ export default function WhereToEatPage() {
 
   return (
     <PageWrapper>
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-6 py-24 md:py-32">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-sage">
             Tested & Loved
@@ -48,7 +48,7 @@ export default function WhereToEatPage() {
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((eat) => (
+            {filtered.map((eat, i) => (
               <Card
                 key={eat.slug}
                 href={`/where-to-eat/${eat.slug}`}
@@ -56,6 +56,7 @@ export default function WhereToEatPage() {
                 subtitle={eat.subtitle}
                 coverImage={eat.coverImage}
                 badge={eat.cuisine}
+                index={i}
                 meta={
                   <div className="flex gap-2">
                     <Tag>{eat.priceRange}</Tag>

@@ -14,11 +14,11 @@ export function FeaturedGrid() {
   const eats = getFeaturedEats().slice(0, 2);
 
   return (
-    <section className="px-6 py-20">
-      <div className="mx-auto max-w-7xl">
-        {/* Experiences */}
-        <div className="mb-16">
-          <div className="mb-8 flex items-end justify-between">
+    <>
+      {/* Experiences */}
+      <section className="px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 flex items-end justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-sage">
                 Curated
@@ -35,7 +35,7 @@ export function FeaturedGrid() {
             </a>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {experiences.map((exp) => (
+            {experiences.map((exp, i) => (
               <Card
                 key={exp.slug}
                 href={`/experiences/${exp.slug}`}
@@ -43,6 +43,7 @@ export function FeaturedGrid() {
                 subtitle={exp.subtitle}
                 coverImage={exp.coverImage}
                 badge={exp.category}
+                index={i}
                 meta={
                   <div className="flex gap-2">
                     <Tag>{exp.duration}</Tag>
@@ -53,10 +54,12 @@ export function FeaturedGrid() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Itineraries */}
-        <div className="mb-16">
-          <div className="mb-8 flex items-end justify-between">
+      {/* Itineraries — alternating bg */}
+      <section className="bg-sand-dark/40 px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 flex items-end justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-sage">
                 Ready-Made Plans
@@ -73,7 +76,7 @@ export function FeaturedGrid() {
             </a>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {itineraries.map((itin) => (
+            {itineraries.map((itin, i) => (
               <Card
                 key={itin.slug}
                 href={`/itineraries/${itin.slug}`}
@@ -81,6 +84,7 @@ export function FeaturedGrid() {
                 subtitle={itin.subtitle}
                 coverImage={itin.coverImage}
                 badge={itin.durationLabel}
+                index={i}
                 meta={
                   <div className="flex gap-2">
                     <Tag>{itin.pace}</Tag>
@@ -91,68 +95,74 @@ export function FeaturedGrid() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Stays & Eats side by side */}
-        <div className="grid gap-16 lg:grid-cols-2">
-          <div>
-            <div className="mb-8">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage">
-                Recommended
-              </p>
-              <h2 className="mt-1 font-heading text-3xl text-ink">
-                Where to Stay
-              </h2>
+      {/* Stays & Eats side by side */}
+      <section className="px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-16 lg:grid-cols-2">
+            <div>
+              <div className="mb-10">
+                <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+                  Recommended
+                </p>
+                <h2 className="mt-1 font-heading text-3xl text-ink">
+                  Where to Stay
+                </h2>
+              </div>
+              <div className="flex flex-col gap-6">
+                {stays.map((stay, i) => (
+                  <Card
+                    key={stay.slug}
+                    href={`/where-to-stay/${stay.slug}`}
+                    title={stay.title}
+                    subtitle={stay.subtitle}
+                    coverImage={stay.coverImage}
+                    badge={stay.feelLabel}
+                    index={i}
+                    meta={
+                      <div className="flex gap-2">
+                        <Tag>{stay.walkingMinutes} min walk</Tag>
+                        <Tag>{stay.priceRange}</Tag>
+                      </div>
+                    }
+                  />
+                ))}
+              </div>
             </div>
-            <div className="flex flex-col gap-6">
-              {stays.map((stay) => (
-                <Card
-                  key={stay.slug}
-                  href={`/where-to-stay/${stay.slug}`}
-                  title={stay.title}
-                  subtitle={stay.subtitle}
-                  coverImage={stay.coverImage}
-                  badge={stay.feelLabel}
-                  meta={
-                    <div className="flex gap-2">
-                      <Tag>{stay.walkingMinutes} min walk</Tag>
-                      <Tag>{stay.priceRange}</Tag>
-                    </div>
-                  }
-                />
-              ))}
-            </div>
-          </div>
 
-          <div>
-            <div className="mb-8">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage">
-                Tested & Loved
-              </p>
-              <h2 className="mt-1 font-heading text-3xl text-ink">
-                Where to Eat
-              </h2>
-            </div>
-            <div className="flex flex-col gap-6">
-              {eats.map((eat) => (
-                <Card
-                  key={eat.slug}
-                  href={`/where-to-eat/${eat.slug}`}
-                  title={eat.title}
-                  subtitle={eat.subtitle}
-                  coverImage={eat.coverImage}
-                  badge={eat.cuisine}
-                  meta={
-                    <div className="flex gap-2">
-                      <Tag>{eat.priceRange}</Tag>
-                      {eat.mustTry && <Tag>{eat.mustTry}</Tag>}
-                    </div>
-                  }
-                />
-              ))}
+            <div>
+              <div className="mb-10">
+                <p className="text-sm font-semibold uppercase tracking-widest text-sage">
+                  Tested & Loved
+                </p>
+                <h2 className="mt-1 font-heading text-3xl text-ink">
+                  Where to Eat
+                </h2>
+              </div>
+              <div className="flex flex-col gap-6">
+                {eats.map((eat, i) => (
+                  <Card
+                    key={eat.slug}
+                    href={`/where-to-eat/${eat.slug}`}
+                    title={eat.title}
+                    subtitle={eat.subtitle}
+                    coverImage={eat.coverImage}
+                    badge={eat.cuisine}
+                    index={i}
+                    meta={
+                      <div className="flex gap-2">
+                        <Tag>{eat.priceRange}</Tag>
+                        {eat.mustTry && <Tag>{eat.mustTry}</Tag>}
+                      </div>
+                    }
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

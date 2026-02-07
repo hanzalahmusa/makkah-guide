@@ -31,7 +31,7 @@ export default function ExperiencesPage() {
 
   return (
     <PageWrapper>
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-6 py-24 md:py-32">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-sage">
             Curated
@@ -53,7 +53,7 @@ export default function ExperiencesPage() {
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((exp) => (
+            {filtered.map((exp, i) => (
               <Card
                 key={exp.slug}
                 href={`/experiences/${exp.slug}`}
@@ -61,6 +61,7 @@ export default function ExperiencesPage() {
                 subtitle={exp.subtitle}
                 coverImage={exp.coverImage}
                 badge={exp.category}
+                index={i}
                 meta={
                   <div className="flex gap-2">
                     <Tag>{exp.duration}</Tag>

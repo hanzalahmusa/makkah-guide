@@ -49,6 +49,8 @@ body {
   background-color: var(--color-sand);
   color: var(--color-ink);
   font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
