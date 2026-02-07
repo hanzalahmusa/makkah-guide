@@ -54,7 +54,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="px-6 py-12 md:py-16">
+      <div className="px-6 pb-6 pt-10 md:pb-8 md:pt-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-ink">
             Your Independent City Guide

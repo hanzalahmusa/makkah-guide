@@ -16,7 +16,7 @@ export function FeaturedGrid() {
   return (
     <>
       {/* Experiences */}
-      <section className="px-6 py-12 md:py-16">
+      <section className="px-6 py-8 md:py-12">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex items-end justify-between">
             <div>
