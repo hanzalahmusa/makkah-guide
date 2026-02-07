@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllStays, getStayBySlug } from "@/lib/content";
 import { createMetadata } from "@/lib/metadata";
-import { MDXContent } from "@/components/mdx/MDXContent";
 import { Badge } from "@/components/ui/Badge";
 import { Tag } from "@/components/ui/Tag";
 import { PageWrapper } from "@/components/layout/PageWrapper";
@@ -68,50 +67,43 @@ export default async function StayDetailPage({ params }: Props) {
             )}
           </div>
 
-          {/* Pros & Cons */}
-          <div className="mb-12 grid gap-6 md:grid-cols-2">
-            <div className="rounded-xl bg-sage/5 p-6">
-              <h3 className="mb-4 font-heading text-lg text-sage-dark">
-                What we love
-              </h3>
-              <ul className="space-y-2">
-                {stay.pros.map((pro, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-ink-light">
-                    <span className="mt-0.5 text-sage">+</span>
-                    {pro}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-xl bg-clay/5 p-6">
-              <h3 className="mb-4 font-heading text-lg text-clay">
-                Worth knowing
-              </h3>
-              <ul className="space-y-2">
-                {stay.cons.map((con, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-ink-light">
-                    <span className="mt-0.5 text-clay">-</span>
-                    {con}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Book this if */}
+          <div className="border-b border-sand-dark">
+            <h3 className="py-4 font-heading text-xl text-ink">Book this if</h3>
+            <ul className="space-y-2 pb-6">
+              {stay.pros.map((pro, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-ink-light">
+                  <span className="mt-0.5 text-sage">&#10003;</span>
+                  {pro}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Skip this if */}
+          <div className="border-b border-sand-dark">
+            <h3 className="py-4 font-heading text-xl text-ink">Skip this if</h3>
+            <ul className="space-y-2 pb-6">
+              {stay.cons.map((con, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-ink-light">
+                  <span className="mt-0.5 text-gold">&times;</span>
+                  {con}
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Best for */}
           {stay.bestFor.length > 0 && (
-            <div className="mb-12">
-              <h3 className="mb-3 font-heading text-lg text-ink">Best for</h3>
-              <div className="flex flex-wrap gap-2">
+            <div className="border-b border-sand-dark">
+              <h3 className="py-4 font-heading text-xl text-ink">Best for</h3>
+              <div className="flex flex-wrap gap-2 pb-6">
                 {stay.bestFor.map((item, i) => (
                   <Tag key={i}>{item}</Tag>
                 ))}
               </div>
             </div>
           )}
-
-          {/* Content */}
-          <MDXContent code={stay.body} />
         </div>
       </article>
     </PageWrapper>
