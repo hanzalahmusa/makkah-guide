@@ -24,7 +24,7 @@ export function FeaturedGrid() {
                 Curated
               </p>
               <h2 className="mt-1 font-heading text-3xl text-ink md:text-4xl">
-                Featured Experiences
+                Experiences
               </h2>
             </div>
             <a
